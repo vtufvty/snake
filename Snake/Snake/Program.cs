@@ -33,9 +33,9 @@ namespace Snake
             Leftline.Drow();
             Rightline.Drow();
 
-            Point p1 = new Point(2, 3, '@');
-            p1.Draw();
-
+            Point p = new Point(2, 3, '@');
+            Snake snake = new Snake(p, 4, Direction.RIGHT);
+            snake.Drow();
 
             Console.ReadLine();
 
